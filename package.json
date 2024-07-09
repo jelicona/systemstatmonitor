@@ -1,0 +1,36 @@
+{
+  "name": "systemstatmonitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jelicona/systemstatmonitor.git"
+  },
+  "author": "Julian Licona",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jelicona/systemstatmonitor/issues"
+  },
+  "homepage": "https://github.com/jelicona/systemstatmonitor#readme",
+  "keywords": [],
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.2.4",
+    "multer": "^1.4.5-lts.1",
+    "systeminformation": "^5.22.11"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.21",
+    "@types/mongoose": "^5.11.97",
+    "@types/multer": "^1.4.11"
+  }
+}
