@@ -1,7 +1,9 @@
-import {getSystemInfo} from '../services/systeminfo.service'
+const {getSystemInfo} = require('../services/systeminfo.service')
 
-const getSystemInfo = (req, res) => {
+const systemInfo = async (req, res) => {
 
+    const systemInfo = await getSystemInfo();
+    res.send(systemInfo);
 }
 
-module.exports = {getSystemInfo}
+module.exports = {systemInfo}

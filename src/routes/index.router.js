@@ -1,5 +1,5 @@
 const express = require('express');
-const app = express();
+const {systemInfo } = require('../controllers/systeminfo.controller');
 const router = express.Router();
 
 
@@ -7,7 +7,8 @@ router.get('/', (req, res) => {
     res.send('Página principal');
 });
 
-app.use('/systeminfo', ()=>{});
-app.use('/issuesform', () =>{});
 
-module.exports = router;
+router.use('/systeminfo', systemInfo);
+//router.use('/issuesform', () =>{});
+
+module.exports = router;  
